@@ -1,0 +1,149 @@
+# RUSSIAN TRANSLATION
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: ru\n"
+
+msgid "Welcome to Ahmadjonov Salohiddin's Portfolio"
+msgstr "Добро пожаловать в портфолио Ахмаджонова Салохиддина"
+
+msgid "Full-stack Developer & Problem Solver"
+msgstr "Full-stack разработчик и решатель проблем"
+
+msgid "About Me"
+msgstr "Обо мне"
+
+msgid "Name"
+msgstr "Имя"
+
+msgid "Age"
+msgstr "Возраст"
+
+msgid "City"
+msgstr "Город"
+
+msgid "Tashkent"
+msgstr "Ташкент"
+
+msgid "District"
+msgstr "Район"
+
+msgid "Skills"
+msgstr "Навыки"
+
+msgid "Projects"
+msgstr "Проекты"
+
+msgid "Technical Skills"
+msgstr "Технические навыки"
+
+msgid "Blog Posts"
+msgstr "Блог посты"
+
+msgid "Get In Touch"
+msgstr "Связаться"
+
+msgid "Feel free to reach out for collaborations or just a friendly chat"
+msgstr "Не стесняйтесь обращаться для сотрудничества или просто дружеской беседы"
+
+msgid "Location"
+msgstr "Местоположение"
+
+msgid "Tashkent, Bel-tepa"
+msgstr "Ташкент, Бел-тепа"
+
+msgid "Telegram username"
+msgstr "@aSALOHIDDIN"
+
+msgid "Back to Projects"
+msgstr "Вернуться к проектам"
+
+msgid "Short Description"
+msgstr "Краткое описание"
+
+msgid "Full Description"
+msgstr "Полное описание"
+
+msgid "Client"
+msgstr "Клиент"
+
+msgid "Project URL"
+msgstr "Ссылка на проект"
+
+msgid "Visit Project"
+msgstr "Посетить проект"
+
+msgid "Back to Blogs"
+msgstr "Вернуться к блогам"
+
+msgid "Description"
+msgstr "Описание"
+
+msgid "Video"
+msgstr "Видео"
+
+msgid "Your browser does not support the video tag."
+msgstr "Ваш браузер не поддерживает тег video."
+
+msgid "Home"
+msgstr "Главная"
+
+msgid "About"
+msgstr "О сайте"
+
+msgid "Blogs"
+msgstr "Блоги"
+
+msgid "Contact"
+msgstr "Контакты"
+
+msgid "Quick Links"
+msgstr "Быстрые ссылки"
+
+msgid "All rights reserved"
+msgstr "Все права защищены"
+
+msgid "Full-stack developer"
+msgstr "Full-stack разработчик"
+
+msgid "Video cannot be displayed here"
+msgstr "Видео не может быть отображено здесь"
+
+msgid "Watch on YouTube"
+msgstr "Смотреть на YouTube"
+
+msgid "Full Name"
+msgstr "Полное имя"
+
+msgid "Your full name"
+msgstr "Ваше полное имя"
+
+msgid "Phone Number"
+msgstr "Номер телефона"
+
+msgid "Message"
+msgstr "Сообщение"
+
+msgid "Your message"
+msgstr "Ваше сообщение"
+
+msgid "Send Message"
+msgstr "Отправить сообщение"
+
+msgid "Sending..."
+msgstr "Отправка..."
+
+msgid "Message Sent Successfully!"
+msgstr "Сообщение успешно отправлено!"
+
+msgid "Your message has been sent to Salohiddin. We will contact you soon!"
+msgstr "Ваше сообщение было отправлено Салохиддину. Мы свяжемся с вами в ближайшее время!"
+
+msgid "Iltimos, barcha maydonlarni to'ldiring"
+msgstr "Пожалуйста, заполните все поля"
+
+msgid "Xabaringiz muvaffaqiyatli yuborildi! Tez orada siz bilan bog'lanamiz."
+msgstr "Ваше сообщение успешно отправлено! Мы свяжемся с вами в ближайшее время."
+
+msgid "Xatolik yuz berdi. Iltimos, qayta urinib ko'ring."
+msgstr "Произошла ошибка. Пожалуйста, попробуйте еще раз."

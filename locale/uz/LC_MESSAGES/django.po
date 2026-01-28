@@ -1,0 +1,149 @@
+# UZBEK TRANSLATION
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: uz\n"
+
+msgid "Welcome to Ahmadjonov Salohiddin's Portfolio"
+msgstr "Ahmadjonov Salohiddinning Portfoliyosiga Xush Kelibsiz"
+
+msgid "Full-stack Developer & Problem Solver"
+msgstr "Full-stack Dasturchi & Muammolarni Yechuvchi"
+
+msgid "About Me"
+msgstr "Men Haqimda"
+
+msgid "Name"
+msgstr "Ism"
+
+msgid "Age"
+msgstr "Yosh"
+
+msgid "City"
+msgstr "Shahar"
+
+msgid "Tashkent"
+msgstr "Toshkent"
+
+msgid "District"
+msgstr "Tuman"
+
+msgid "Skills"
+msgstr "Ko'nikmalar"
+
+msgid "Projects"
+msgstr "Proyektlar"
+
+msgid "Technical Skills"
+msgstr "Texnik Ko'nikmalar"
+
+msgid "Blog Posts"
+msgstr "Blog Postlar"
+
+msgid "Get In Touch"
+msgstr "Bog'lanish"
+
+msgid "Feel free to reach out for collaborations or just a friendly chat"
+msgstr "Hamkorlik yoki do'stona suhbat uchun bemalol bog'laning"
+
+msgid "Location"
+msgstr "Manzil"
+
+msgid "Tashkent, Bel-tepa"
+msgstr "Toshkent, Bel-tepa"
+
+msgid "Telegram username"
+msgstr "@aSALOHIDDIN"
+
+msgid "Back to Projects"
+msgstr "Proyektlarga Qaytish"
+
+msgid "Short Description"
+msgstr "Qisqa Tavsif"
+
+msgid "Full Description"
+msgstr "To'liq Tavsif"
+
+msgid "Client"
+msgstr "Mijoz"
+
+msgid "Project URL"
+msgstr "Proyekt Havolasi"
+
+msgid "Visit Project"
+msgstr "Proyektni Ko'rish"
+
+msgid "Back to Blogs"
+msgstr "Bloglarga Qaytish"
+
+msgid "Description"
+msgstr "Tavsif"
+
+msgid "Video"
+msgstr "Video"
+
+msgid "Your browser does not support the video tag."
+msgstr "Sizning brauzeringiz video tegini qo'llab-quvvatlamaydi."
+
+msgid "Home"
+msgstr "Bosh sahifa"
+
+msgid "About"
+msgstr "Haqida"
+
+msgid "Blogs"
+msgstr "Bloglar"
+
+msgid "Contact"
+msgstr "Bog'lanish"
+
+msgid "Quick Links"
+msgstr "Tez Havolalar"
+
+msgid "All rights reserved"
+msgstr "Barcha huquqlar himoyalangan"
+
+msgid "Full-stack developer"
+msgstr "Full-stack dasturchi"
+
+msgid "Video cannot be displayed here"
+msgstr "Video bu yerda ko'rsatilmaydi"
+
+msgid "Watch on YouTube"
+msgstr "YouTube da tomosha qilish"
+
+msgid "Full Name"
+msgstr "Ism familiya"
+
+msgid "Your full name"
+msgstr "Ism familiyangiz"
+
+msgid "Phone Number"
+msgstr "Telefon raqami"
+
+msgid "Message"
+msgstr "Xabar"
+
+msgid "Your message"
+msgstr "Xabaringiz"
+
+msgid "Send Message"
+msgstr "Xabar Yuborish"
+
+msgid "Sending..."
+msgstr "Yuborilmoqda..."
+
+msgid "Message Sent Successfully!"
+msgstr "Xabar Muvaffaqiyatli Yuborildi!"
+
+msgid "Your message has been sent to Salohiddin. We will contact you soon!"
+msgstr "Xabaringiz Salohiddinga yuborildi. Tez orada siz bilan bog'lanamiz!"
+
+msgid "Iltimos, barcha maydonlarni to'ldiring"
+msgstr "Iltimos, barcha maydonlarni to'ldiring"
+
+msgid "Xabaringiz muvaffaqiyatli yuborildi! Tez orada siz bilan bog'lanamiz."
+msgstr "Xabaringiz muvaffaqiyatli yuborildi! Tez orada siz bilan bog'lanamiz."
+
+msgid "Xatolik yuz berdi. Iltimos, qayta urinib ko'ring."
+msgstr "Xatolik yuz berdi. Iltimos, qayta urinib ko'ring."

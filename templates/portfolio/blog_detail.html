@@ -1,0 +1,76 @@
+{% extends 'portfolio/base.html' %}
+{% load i18n static %}
+{% load video_filters %}
+
+{% block content %}
+<section class="blog-detail">
+    <div class="container">
+        <a href="/#blogs" class="back-button">← {% trans "Back to Blogs" %}</a>
+
+        <div class="detail-content">
+            <h1 class="detail-title">
+                {% if current_lang == 'uz' %}
+                {{ blog.title_uz }}
+                {% elif current_lang == 'ru' %}
+                {{ blog.title_ru }}
+                {% else %}
+                {{ blog.title_en }}
+                {% endif %}
+            </h1>
+
+            <div class="detail-image">
+                <img src="{{ blog.image.url }}" alt="{{ blog.get_title|default:blog.title_uz }}">
+            </div>
+
+            <div class="detail-info">
+                <div class="detail-section">
+                    <h3>{% trans "Description" %}</h3>
+                    <p>
+                        {% if current_lang == 'uz' %}
+                        {{ blog.description_uz|linebreaks }}
+                        {% elif current_lang == 'ru' %}
+                        {{ blog.description_ru|linebreaks }}
+                        {% else %}
+                        {{ blog.description_en|linebreaks }}
+                        {% endif %}
+                    </p>
+                </div>
+
+                {% if blog.video_url %}
+                <div class="detail-section">
+                    <h3>{% trans "Video" %}</h3>
+                    <div class="video-wrapper">
+                        <div class="video-container">
+                            <iframe src="{{ blog.video_url|youtube_embed }}" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy">
+                            </iframe>
+                        </div>
+                        <div class="video-fallback" style="display: none;">
+                            <p>{% trans "Video cannot be displayed here" %}</p>
+                            <a href="https://www.youtube.com/watch?v={{ blog.video_url|get_video_id }}" target="_blank"
+                                rel="noopener noreferrer">
+                                {% trans "Watch on YouTube" %} →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+
+                {% if blog.video_file %}
+                <div class="detail-section">
+                    <h3>{% trans "Video" %}</h3>
+                    <div class="video-container">
+                        <video controls>
+                            <source src="{{ blog.video_file.url }}" type="video/mp4">
+                            {% trans "Your browser does not support the video tag." %}
+                        </video>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

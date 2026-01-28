@@ -1,0 +1,149 @@
+# ENGLISH TRANSLATION
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: en\n"
+
+msgid "Welcome to Ahmadjonov Salohiddin's Portfolio"
+msgstr "Welcome to Ahmadjonov Salohiddin's Portfolio"
+
+msgid "Full-stack Developer & Problem Solver"
+msgstr "Full-stack Developer & Problem Solver"
+
+msgid "About Me"
+msgstr "About Me"
+
+msgid "Name"
+msgstr "Name"
+
+msgid "Age"
+msgstr "Age"
+
+msgid "City"
+msgstr "City"
+
+msgid "Tashkent"
+msgstr "Tashkent"
+
+msgid "District"
+msgstr "District"
+
+msgid "Skills"
+msgstr "Skills"
+
+msgid "Projects"
+msgstr "Projects"
+
+msgid "Technical Skills"
+msgstr "Technical Skills"
+
+msgid "Blog Posts"
+msgstr "Blog Posts"
+
+msgid "Get In Touch"
+msgstr "Get In Touch"
+
+msgid "Feel free to reach out for collaborations or just a friendly chat"
+msgstr "Feel free to reach out for collaborations or just a friendly chat"
+
+msgid "Location"
+msgstr "Location"
+
+msgid "Tashkent, Bel-tepa"
+msgstr "Tashkent, Bel-tepa"
+
+msgid "Telegram username"
+msgstr "@aSALOHIDDIN"
+
+msgid "Back to Projects"
+msgstr "Back to Projects"
+
+msgid "Short Description"
+msgstr "Short Description"
+
+msgid "Full Description"
+msgstr "Full Description"
+
+msgid "Client"
+msgstr "Client"
+
+msgid "Project URL"
+msgstr "Project URL"
+
+msgid "Visit Project"
+msgstr "Visit Project"
+
+msgid "Back to Blogs"
+msgstr "Back to Blogs"
+
+msgid "Description"
+msgstr "Description"
+
+msgid "Video"
+msgstr "Video"
+
+msgid "Your browser does not support the video tag."
+msgstr "Your browser does not support the video tag."
+
+msgid "Home"
+msgstr "Home"
+
+msgid "About"
+msgstr "About"
+
+msgid "Blogs"
+msgstr "Blogs"
+
+msgid "Contact"
+msgstr "Contact"
+
+msgid "Quick Links"
+msgstr "Quick Links"
+
+msgid "All rights reserved"
+msgstr "All rights reserved"
+
+msgid "Full-stack developer"
+msgstr "Full-stack developer"
+
+msgid "Video cannot be displayed here"
+msgstr "Video cannot be displayed here"
+
+msgid "Watch on YouTube"
+msgstr "Watch on YouTube"
+
+msgid "Full Name"
+msgstr "Full Name"
+
+msgid "Your full name"
+msgstr "Your full name"
+
+msgid "Phone Number"
+msgstr "Phone Number"
+
+msgid "Message"
+msgstr "Message"
+
+msgid "Your message"
+msgstr "Your message"
+
+msgid "Send Message"
+msgstr "Send Message"
+
+msgid "Sending..."
+msgstr "Sending..."
+
+msgid "Message Sent Successfully!"
+msgstr "Message Sent Successfully!"
+
+msgid "Your message has been sent to Salohiddin. We will contact you soon!"
+msgstr "Your message has been sent to Salohiddin. We will contact you soon!"
+
+msgid "Iltimos, barcha maydonlarni to'ldiring"
+msgstr "Please fill in all fields"
+
+msgid "Xabaringiz muvaffaqiyatli yuborildi! Tez orada siz bilan bog'lanamiz."
+msgstr "Your message has been sent successfully! We will contact you soon."
+
+msgid "Xatolik yuz berdi. Iltimos, qayta urinib ko'ring."
+msgstr "An error occurred. Please try again."

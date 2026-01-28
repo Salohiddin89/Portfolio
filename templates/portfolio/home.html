@@ -1,0 +1,224 @@
+{% extends 'portfolio/base.html' %}
+{% load i18n static %}
+
+{% block content %}
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">{% trans "Welcome to Ahmadjonov Salohiddin's Portfolio" %}</h1>
+            <p class="hero-subtitle">{% trans "Full-stack Developer & Problem Solver" %}</p>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about">
+    <div class="container">
+        <h2 class="section-title">{% trans "About Me" %}</h2>
+        <div class="about-content">
+            <div class="about-info">
+                <div class="info-item">
+                    <span class="info-label">{% trans "Name" %}:</span>
+                    <span class="info-value">Ahmadjonov Salohiddin</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">{% trans "Age" %}:</span>
+                    <span class="info-value">16</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">{% trans "City" %}:</span>
+                    <span class="info-value">{% trans "Tashkent" %}</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">{% trans "District" %}:</span>
+                    <span class="info-value">Bel-tepa</span>
+                </div>
+            </div>
+            
+            <div class="skills-marquee">
+                <h3>{% trans "Skills" %}</h3>
+                <div class="marquee">
+                    <div class="marquee-content">
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">Django</span>
+                        <span class="skill-item">HTML</span>
+                        <span class="skill-item">CSS</span>
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">Telegram Bot</span>
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">Django</span>
+                        <span class="skill-item">HTML</span>
+                        <span class="skill-item">CSS</span>
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">Telegram Bot</span>
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">Django</span>
+                        <span class="skill-item">HTML</span>
+                        <span class="skill-item">CSS</span>
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">Telegram Bot</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects">
+    <div class="container">
+        <h2 class="section-title">{% trans "Projects" %}</h2>
+        <div class="projects-grid">
+            {% for project in projects %}
+            <a href="{% url 'project_detail' project.pk %}" class="project-card">
+                <div class="project-image">
+                    <img src="{{ project.image.url }}" alt="{{ project.get_name|default:project.name_uz }}">
+                    <div class="project-overlay">
+                        <h3 class="project-name">
+                            {% if current_lang == 'uz' %}
+                                {{ project.name_uz }}
+                            {% elif current_lang == 'ru' %}
+                                {{ project.name_ru }}
+                            {% else %}
+                                {{ project.name_en }}
+                            {% endif %}
+                        </h3>
+                    </div>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Skills Progress Section -->
+<section id="skills-progress" class="skills-progress">
+    <div class="container">
+        <h2 class="section-title">{% trans "Technical Skills" %}</h2>
+        <div class="skills-grid">
+            {% for skill in skills %}
+            <div class="skill-box">
+                <div class="skill-info">
+                    <h4 class="skill-name">
+                        {% if current_lang == 'uz' %}
+                            {{ skill.name_uz }}
+                        {% elif current_lang == 'ru' %}
+                            {{ skill.name_ru }}
+                        {% else %}
+                            {{ skill.name_en }}
+                        {% endif %}
+                    </h4>
+                    <span class="skill-percentage">{{ skill.percentage }}%</span>
+                </div>
+                <div class="circular-progress" data-percentage="{{ skill.percentage }}">
+                    <svg class="progress-ring" width="120" height="120">
+                        <circle class="progress-ring-circle-bg" cx="60" cy="60" r="52"></circle>
+                        <circle class="progress-ring-circle" cx="60" cy="60" r="52"></circle>
+                    </svg>
+                    <div class="progress-text">
+                        <span class="progress-number">0</span>
+                        <span class="progress-symbol">%</span>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Blogs Section -->
+<section id="blogs" class="blogs">
+    <div class="container">
+        <h2 class="section-title">{% trans "Blog Posts" %}</h2>
+        <div class="blogs-grid">
+            {% for blog in blogs %}
+            <a href="{% url 'blog_detail' blog.pk %}" class="blog-card">
+                <div class="blog-image">
+                    <img src="{{ blog.image.url }}" alt="{{ blog.get_title|default:blog.title_uz }}">
+                </div>
+                <div class="blog-content">
+                    <h3 class="blog-title">
+                        {% if current_lang == 'uz' %}
+                            {{ blog.title_uz }}
+                        {% elif current_lang == 'ru' %}
+                            {{ blog.title_ru }}
+                        {% else %}
+                            {{ blog.title_en }}
+                        {% endif %}
+                    </h3>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2 class="section-title">{% trans "Get In Touch" %}</h2>
+        <div class="contact-content">
+            <p>{% trans "Feel free to reach out for collaborations or just a friendly chat" %}</p>
+            
+            <!-- Contact Form -->
+            <div class="contact-form-wrapper">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="fullName">{% trans "Full Name" %}</label>
+                        <input type="text" id="fullName" name="full_name" required placeholder="{% trans 'Your full name' %}">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">{% trans "Phone Number" %}</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+998 90 123 45 67">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">{% trans "Message" %}</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="{% trans 'Your message' %}"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-text">{% trans "Send Message" %}</span>
+                        <span class="btn-loading" style="display: none;">{% trans "Sending..." %}</span>
+                    </button>
+                </form>
+                
+                <!-- Success Message -->
+                <div id="successMessage" class="success-message" style="display: none;">
+                    <div class="success-icon">✓</div>
+                    <h3>{% trans "Message Sent Successfully!" %}</h3>
+                    <p>{% trans "Your message has been sent to Salohiddin. We will contact you soon!" %}</p>
+                </div>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="contact-icon">📧</i>
+                    <div>
+                        <strong>Email:</strong>
+                        <a href="mailto:ahmadjonovsalohiddin97@gmail.com">ahmadjonovsalohiddin97@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="contact-icon">📍</i>
+                    <div>
+                        <strong>{% trans "Location" %}:</strong>
+                        <span>{% trans "Tashkent, Bel-tepa" %}</span>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="contact-icon">✈️</i>
+                    <div>
+                        <strong>Telegram:</strong>
+                        <a href="https://t.me/aSALOHIDDIN" target="_blank">@aSALOHIDDIN</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

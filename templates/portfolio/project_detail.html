@@ -1,0 +1,76 @@
+{% extends 'portfolio/base.html' %}
+{% load i18n static %}
+
+{% block content %}
+<section class="project-detail">
+    <div class="container">
+        <a href="/#projects" class="back-button">← {% trans "Back to Projects" %}</a>
+
+        <div class="detail-content">
+            <div class="detail-image">
+                <img src="{{ project.image.url }}" alt="{{ project.get_name|default:project.name_uz }}">
+            </div>
+
+            <div class="detail-info">
+                <h1 class="detail-title">
+                    {% if current_lang == 'uz' %}
+                    {{ project.name_uz }}
+                    {% elif current_lang == 'ru' %}
+                    {{ project.name_ru }}
+                    {% else %}
+                    {{ project.name_en }}
+                    {% endif %}
+                </h1>
+
+                <div class="detail-section">
+                    <h3>{% trans "Short Description" %}</h3>
+                    <p>
+                        {% if current_lang == 'uz' %}
+                        {{ project.short_description_uz }}
+                        {% elif current_lang == 'ru' %}
+                        {{ project.short_description_ru }}
+                        {% else %}
+                        {{ project.short_description_en }}
+                        {% endif %}
+                    </p>
+                </div>
+
+                <div class="detail-section">
+                    <h3>{% trans "Full Description" %}</h3>
+                    <p>
+                        {% if current_lang == 'uz' %}
+                        {{ project.full_description_uz }}
+                        {% elif current_lang == 'ru' %}
+                        {{ project.full_description_ru }}
+                        {% else %}
+                        {{ project.full_description_en }}
+                        {% endif %}
+                    </p>
+                </div>
+
+                {% if project.client_uz or project.client_ru or project.client_en %}
+                <div class="detail-section">
+                    <h3>{% trans "Client" %}</h3>
+                    <p>
+                        {% if current_lang == 'uz' %}
+                        {{ project.client_uz }}
+                        {% elif current_lang == 'ru' %}
+                        {{ project.client_ru }}
+                        {% else %}
+                        {{ project.client_en }}
+                        {% endif %}
+                    </p>
+                </div>
+                {% endif %}
+
+                {% if project.url %}
+                <div class="detail-section">
+                    <h3>{% trans "Project URL" %}</h3>
+                    <a href="{{ project.url }}" target="_blank" class="project-url">{% trans "Visit Project" %} →</a>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
