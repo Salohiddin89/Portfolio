@@ -3,12 +3,27 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from django.conf.urls.i18n import i18n_patterns
+from django.contrib.sitemaps.views import sitemap
 from portfolio import views
+from portfolio.sitemaps import StaticViewSitemap, ProjectSitemap, BlogSitemap
+
+sitemaps = {
+    "static": StaticViewSitemap,
+    "projects": ProjectSitemap,
+    "blogs": BlogSitemap,
+}
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("i18n/", include("django.conf.urls.i18n")),
     path("api/send-message/", views.send_message, name="send_message"),
+    path(
+        "sitemap.xml",
+        sitemap,
+        {"sitemaps": sitemaps},
+        name="django.contrib.sitemaps.views.sitemap",
+    ),
+    path("robots.txt", views.robots_txt, name="robots_txt"),
 ]
 
 urlpatterns += i18n_patterns(
